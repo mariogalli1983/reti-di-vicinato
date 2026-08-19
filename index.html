@@ -163,6 +163,53 @@
     grid-template-columns: 1fr;
   }
 }  
+ .contact {
+  width: 88%;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.contact p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp {
+  background: #202020;
+  color: #ffffff;
+}
+
+.email {
+  background: #b3261e;
+  color: #ffffff;
+}   
     footer {
       text-align: center;
       padding: 30px;
@@ -177,6 +224,7 @@
 <header>
   <h1>Reti di Vicinato</h1>
   <p>Municipio Roma V</p>
+  <p class="project-author">Un progetto civico di <strong>Mario Galli</strong></p>
 </header>
 
 <section class="hero">
@@ -264,8 +312,38 @@
 
   </div>
 </section>
-<footer>
-  Reti di Vicinato – progetto civico territoriale
+<section class="contact">
+  <h2>Parliamone</h2>
+
+  <p>
+    Hai una domanda, vuoi segnalarmi qualcosa o vuoi approfondire
+    una situazione del quartiere?
+    <br>
+    Puoi contattarmi direttamente.
+  </p>
+
+  <div class="contact-buttons">
+
+    <a class="contact-button whatsapp"
+       href="https://wa.me/393928895626?text=Ciao%20Mario%2C%20ti%20contatto%20dal%20sito%20Reti%20di%20Vicinato."
+       target="_blank"
+       rel="noopener">
+      Scrivimi su WhatsApp
+    </a>
+
+    <a class="contact-button email"
+       href="mailto:mariogalli1983@gmail.com?subject=Reti%20di%20Vicinato">
+      Scrivimi via email
+    </a>
+
+  </div>
+
+  <p style="margin-top: 25px; font-size: 14px;">
+    <strong>Mario Galli</strong> · Municipio Roma V
+  </p>
+</section>
+  <footer>
+  Reti di Vicinato · Un progetto civico di Mario Galli · Municipio Roma V
 </footer>
 
 </body>
