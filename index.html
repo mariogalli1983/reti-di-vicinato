@@ -106,6 +106,19 @@
       border-radius: 8px;
       color: #555;
     }
+    .legend-group {
+  margin-top: 18px;
+}
+
+.legend-group h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.legend-group + .legend-group {
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
 .legend {
   width: 88%;
   margin: -35px auto 50px;
@@ -284,30 +297,45 @@
 <section class="legend">
   <h3>Cosa trovi sulla mappa</h3>
 
-  <div class="legend-items">
-<div class="legend-item">
-  <span class="dot network"></span>
-  <span>Reti di Vicinato WhatsApp</span>
-</div>
-    <div class="legend-item">
-      <span class="dot red"></span>
-      <span>Nuova</span>
-    </div>
+  <div class="legend-group">
+    <h4>Reti di Vicinato</h4>
 
-    <div class="legend-item">
-      <span class="dot orange"></span>
-      <span>Verificata / Inoltrata</span>
+    <div class="legend-items">
+      <div class="legend-item">
+        <span class="dot network"></span>
+        <span>Gruppi WhatsApp di vicinato</span>
+      </div>
     </div>
+  </div>
 
-    <div class="legend-item">
-      <span class="dot yellow"></span>
-      <span>In lavorazione</span>
-    </div>
+  <div class="legend-group">
+    <h4>Segnalazioni</h4>
 
-    <div class="legend-item">
-      <span class="dot blue"></span>
-      <span>Risolta</span>
+    <div class="legend-items">
+
+      <div class="legend-item">
+        <span class="dot red"></span>
+        <span>Nuova</span>
+      </div>
+
+      <div class="legend-item">
+        <span class="dot orange"></span>
+        <span>Verificata / Inoltrata</span>
+      </div>
+
+      <div class="legend-item">
+        <span class="dot yellow"></span>
+        <span>In lavorazione</span>
+      </div>
+
+      <div class="legend-item">
+        <span class="dot blue"></span>
+        <span>Risolta</span>
+      </div>
+
     </div>
+  </div>
+</section>
 
   </div>
 </section>
