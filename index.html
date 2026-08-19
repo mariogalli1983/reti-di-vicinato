@@ -109,6 +109,52 @@
 .orange { background: #ef8c00; }
 .yellow { background: #e6c300; }
 .blue { background: #1976d2; }
+ .how-it-works {
+  width: 88%;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.step {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 28px 22px;
+}
+
+.step-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: #b3261e;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  margin: 0 0 10px;
+}
+
+.step p {
+  margin: 0;
+  line-height: 1.5;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}  
     footer {
       text-align: center;
       padding: 30px;
@@ -172,6 +218,40 @@
     <div class="legend-item">
       <span class="dot blue"></span>
       <span>Risolta</span>
+    </div>
+
+  </div>
+</section>
+  <section class="how-it-works">
+  <h2>Come funziona</h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Segnala</h3>
+      <p>
+        Indica il problema, il luogo e aggiungi una descrizione.
+        Se vuoi, puoi allegare anche una foto.
+      </p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Verifichiamo</h3>
+      <p>
+        La segnalazione viene controllata prima di essere pubblicata
+        sulla mappa.
+      </p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Segui gli aggiornamenti</h3>
+      <p>
+        Il colore del punto mostra lo stato della segnalazione,
+        dalla presa in carico fino alla soluzione.
+      </p>
     </div>
 
   </div>
