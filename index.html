@@ -73,7 +73,42 @@
       border-radius: 8px;
       color: #555;
     }
+.legend {
+  width: 88%;
+  margin: -35px auto 50px;
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
 
+.legend h3 {
+  margin-top: 0;
+}
+
+.legend-items {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background: #d32f2f; }
+.orange { background: #ef8c00; }
+.yellow { background: #e6c300; }
+.blue { background: #1976d2; }
     footer {
       text-align: center;
       padding: 30px;
@@ -114,7 +149,33 @@
     src="https://umap.openstreetmap.fr/it/map/reti-di-vicinato-municipio-roma-v_1446743?scaleControl=false&miniMapControl=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true">
   </iframe>
 </div>
+<section class="legend">
+  <h3>Stato delle segnalazioni</h3>
 
+  <div class="legend-items">
+
+    <div class="legend-item">
+      <span class="dot red"></span>
+      <span>Nuova</span>
+    </div>
+
+    <div class="legend-item">
+      <span class="dot orange"></span>
+      <span>Verificata / Inoltrata</span>
+    </div>
+
+    <div class="legend-item">
+      <span class="dot yellow"></span>
+      <span>In lavorazione</span>
+    </div>
+
+    <div class="legend-item">
+      <span class="dot blue"></span>
+      <span>Risolta</span>
+    </div>
+
+  </div>
+</section>
 <footer>
   Reti di Vicinato – progetto civico territoriale
 </footer>
